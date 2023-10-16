@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,2475" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1228,2475" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -115,28 +115,28 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Obtain User Email Address" sap:VirtualizedContainerService.HintSize="410,239" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please enter email address (Ensure that you are currently logged out of this account):" Title="Email Address Required (Part 1 of 6)">
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Obtain User Email Address" sap:VirtualizedContainerService.HintSize="410,239" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please enter email address (Ensure that you are currently logged out of this account):" Title="Email Address Required (Step 1 of 6)">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[UserEmailAddress]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Obtain User Password" sap:VirtualizedContainerService.HintSize="410,239" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="True" Label="Please enter password:" Title="Password Required (Part 2 of 6)">
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Obtain User Password" sap:VirtualizedContainerService.HintSize="410,239" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="True" Label="Please enter password:" Title="Password Required (Step 2 of 6)">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[UserPassword]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
     <ui:SelectFile DisplayName="Select Test File Path" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="410,138" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[TestDataFilePath]" />
-    <ui:InputDialog Options="{x:Null}" DisplayName="Select Customers Test" sap:VirtualizedContainerService.HintSize="410,292" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Please select whether you want to test Customers:" OptionsString="Yes;No" Title="Select Customers Test (Part 4 of 6)">
+    <ui:InputDialog Options="{x:Null}" DisplayName="Select Customers Test" sap:VirtualizedContainerService.HintSize="410,292" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Please select whether you want to test Customers:" OptionsString="Yes;No" Title="Select Customers Test (Step 4 of 6)">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[TestCustomers]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <ui:InputDialog Options="{x:Null}" DisplayName="Select Products Test" sap:VirtualizedContainerService.HintSize="410,292" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Please select whether you want to test Products:" OptionsString="Yes;No" Title="Select Products Test (Part 5 of 6)">
+    <ui:InputDialog Options="{x:Null}" DisplayName="Select Products Test" sap:VirtualizedContainerService.HintSize="410,292" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Please select whether you want to test Products:" OptionsString="Yes;No" Title="Select Products Test (Step 5 of 6)">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[TestProducts]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <ui:InputDialog Options="{x:Null}" DisplayName="Select Orders Test" sap:VirtualizedContainerService.HintSize="410,292" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="Please select whether you want to test Orders:" OptionsString="Yes;No" Title="Select Orders Test (Part 6 of 6)">
+    <ui:InputDialog Options="{x:Null}" DisplayName="Select Orders Test" sap:VirtualizedContainerService.HintSize="410,292" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="Please select whether you want to test Orders:" OptionsString="Yes;No" Title="Select Orders Test (Step 6 of 6)">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[TestOrders]</OutArgument>
       </ui:InputDialog.Result>
@@ -157,9 +157,7 @@
           </sap:WorkflowViewStateService.ViewState>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CustomerTest.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="CustomerTest.xaml">
             <ui:InvokeWorkflowFile.Arguments>
-              <InArgument x:TypeArguments="x:String" x:Key="in_TestDataFilePath">
-                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataFilePath" />
-              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_TestDataFilePath">[TestDataFilePath]</InArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
         </Sequence>

@@ -33,6 +33,19 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "CustomerTest.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TestDataTableCustomers&Sequence_1",
+        "ExtractDataTableCustomers&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TestDataFilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
