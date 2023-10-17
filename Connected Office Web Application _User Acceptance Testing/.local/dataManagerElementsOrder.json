@@ -38,6 +38,11 @@
       "Path": "CustomerTest.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "CellphoneDummyData&Sequence_4",
+        "DynamicDetailsRowSelectorID&Sequence_4",
+        "DetailsRowCounter&Sequence_4",
+        "DynamicDetailsRowSelector&Sequence_4",
+        "ExtractedCustomerDetails&Sequence_4",
         "TestDataTableCustomers&Sequence_1",
         "ExtractDataTableCustomers&Sequence_1"
       ],
