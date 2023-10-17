@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1233,15435</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1233,14628</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CustomerTest_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -120,7 +120,12 @@
       <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CustomerTest Sequence" sap:VirtualizedContainerService.HintSize="1088,15370" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="CustomerTest Sequence" sap:VirtualizedContainerService.HintSize="1088,14563" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTableCustomers" />
       <Variable x:TypeArguments="sd:DataTable" Name="TestDataTableCustomers" />
@@ -130,25 +135,25 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1026,15259" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1026,14452" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="992,15172" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="992,14365" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" sap2010:Annotation.AnnotationText="Targets the file which contains the test data." CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="930,15061" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="[in_TestDataFilePath]">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" sap2010:Annotation.AnnotationText="Targets the file which contains the test data." CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="930,14254" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="[in_TestDataFilePath]">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="ExcelTestFile" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="896,14761" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="896,13954" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -161,23 +166,19 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ueab:ReadRangeX>
-                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Home Page - EcoPower_Logistics" sap:VirtualizedContainerService.HintSize="834,14410" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsCVEnabled="False" ScopeGuid="93e24449-d829-4736-98fa-ae576aaa043e" Version="V2">
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Home Page - EcoPower_Logistics" sap:VirtualizedContainerService.HintSize="834,13603" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsCVEnabled="False" ScopeGuid="93e24449-d829-4736-98fa-ae576aaa043e" Version="V2">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="800,14193" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="800,13386" sap2010:WorkflowViewState.IdRef="Sequence_4">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="DynamicDetailsRowSelectorID" />
                               <Variable x:TypeArguments="x:Int32" Name="DetailsRowCounter" />
                               <Variable x:TypeArguments="x:String" Name="DynamicDetailsRowSelector" />
                               <Variable x:TypeArguments="sd:DataTable" Name="ExtractedCustomerDetails" />
-                              <Variable x:TypeArguments="x:String" Name="CellphoneDummyData">
-                                <Variable.Default>
-                                  <Literal x:TypeArguments="x:String">0000000000</Literal>
-                                </Variable.Default>
-                              </Variable>
+                              <Variable x:TypeArguments="x:String" Default="0000000000" Name="CellphoneDummyData" />
                             </Sequence.Variables>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -303,7 +304,7 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <If Condition="[CurrentTestRow.Item(&quot;CustomerTitle&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Title&quot;).ToString OR CurrentTestRow.Item(&quot;CustomerName&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Name&quot;).ToString OR CurrentTestRow.Item(&quot;CustomerSurname&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Surname&quot;).ToString OR CurrentTestRow.Item(&quot;CellPhone&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Cellphone&quot;).ToString]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="510,587" sap2010:WorkflowViewState.IdRef="If_1">
+                                            <If Condition="[CurrentTestRow.Item(&quot;CustomerTitle&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Title&quot;).ToString AND CurrentTestRow.Item(&quot;CustomerName&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Name&quot;).ToString AND CurrentTestRow.Item(&quot;CustomerSurname&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Surname&quot;).ToString AND CurrentTestRow.Item(&quot;CellPhone&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Cellphone&quot;).ToString]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="510,587" sap2010:WorkflowViewState.IdRef="If_1">
                                               <If.Then>
                                                 <Sequence sap:VirtualizedContainerService.HintSize="476,235" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -379,126 +380,73 @@
 &lt;webctrl aaname='Edit' tableRow='" + DynamicDetailsRowSelectorID + "' tag='A' /&gt;"]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Edits each record that was created successfully." DataTable="[TestDataTableCustomers]" DisplayName="For Each Row in Test Data Table - Editing Each Record" sap:VirtualizedContainerService.HintSize="738,2505" sap2010:WorkflowViewState.IdRef="ForEachRow_10">
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Edits each record that was created successfully." DataTable="[ExtractDataTableCustomers]" DisplayName="For Each Row in Extracted Data Table - Editing Each Record" sap:VirtualizedContainerService.HintSize="738,2025" sap2010:WorkflowViewState.IdRef="ForEachRow_10">
                               <ui:ForEachRow.Body>
                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                   <ActivityAction.Argument>
-                                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentTestRow" />
+                                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentExtractedRow" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="628,2288" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="528,1808" sap2010:WorkflowViewState.IdRef="Sequence_25">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTableCustomers]" DisplayName="For Each Row in Extracted Data Table" sap:VirtualizedContainerService.HintSize="586,2200" sap2010:WorkflowViewState.IdRef="ForEachRow_11">
+                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[TestDataTableCustomers]" DisplayName="For Each Row in Test Data Table" sap:VirtualizedContainerService.HintSize="486,1353" sap2010:WorkflowViewState.IdRef="ForEachRow_11">
                                       <ui:ForEachRow.Body>
                                         <ActivityAction x:TypeArguments="sd:DataRow">
                                           <ActivityAction.Argument>
-                                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentExtractedRow" />
+                                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentTestRow" />
                                           </ActivityAction.Argument>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,2014" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,1167" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <If Condition="[CurrentTestRow.Item(&quot;CustomerTitle&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Title&quot;).ToString OR CurrentTestRow.Item(&quot;CustomerName&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Name&quot;).ToString OR CurrentTestRow.Item(&quot;CustomerSurname&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Surname&quot;).ToString OR CurrentTestRow.Item(&quot;CellPhone&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Cellphone&quot;).ToString OR CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="510,1926" sap2010:WorkflowViewState.IdRef="If_2">
+                                            <If Condition="[CurrentTestRow.Item(&quot;CustomerTitle&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Title&quot;).ToString AND CurrentTestRow.Item(&quot;CustomerName&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Name&quot;).ToString AND CurrentTestRow.Item(&quot;CustomerSurname&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Surname&quot;).ToString AND CurrentTestRow.Item(&quot;CellPhone&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Cellphone&quot;).ToString AND CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="410,1079" sap2010:WorkflowViewState.IdRef="If_2">
                                               <If.Then>
-                                                <Sequence sap:VirtualizedContainerService.HintSize="476,1329" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                                <Sequence sap:VirtualizedContainerService.HintSize="376,897" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Customers'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="93e24449-d829-4736-98fa-ae576aaa043e" Version="V3">
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Customers'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="93e24449-d829-4736-98fa-ae576aaa043e" Version="V3">
                                                     <uix:NClick.Target>
                                                       <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/" CvTextArea="380, 107, 81, 14" CvTextArgument="Customers" CvType="Text" DesignTimeRectangle="373, 94, 95, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Customers'" FullSelectorArgument="&lt;webctrl aaname='Customers' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Customers' tag='A' type='' class='nav-link text-dark' check:innerText='Customers' /&gt;" Guid="b0ce7ac4-d0ab-489c-9af7-e123ab1df51f" InformativeScreenshot="29f85db71a28b254ce91425f3bd284d0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home Page - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
                                                     </uix:NClick.Target>
                                                   </uix:NClick>
-                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Edit" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="93e24449-d829-4736-98fa-ae576aaa043e" Version="V3">
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Edit" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="93e24449-d829-4736-98fa-ae576aaa043e" Version="V3">
                                                     <uix:NClick.Target>
                                                       <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Customers" DesignTimeRectangle="0, 0, 1936, 1056" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Details'" FullSelectorArgument="[DynamicDetailsRowSelector]" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Details' type='' tag='A' class='' check:innerText='Details' /&gt;" Guid="f76d0eaf-436b-427e-be2b-7024f4c66d7f" ImageBase64="" InformativeScreenshot="52a33c3479b9c07bc188f363a99b414e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                                     </uix:NClick.Target>
                                                   </uix:NClick>
-                                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Customer Cellphone'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="93e24449-d829-4736-98fa-ae576aaa043e" Text="[CellphoneDummyData]" Version="V3">
+                                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Customer Cellphone'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="93e24449-d829-4736-98fa-ae576aaa043e" Text="[CellphoneDummyData]" Version="V3">
                                                     <uix:NTypeInto.Target>
                                                       <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Customers/Edit/123656956" DesignTimeRectangle="320, 533, 416, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'5723177115'" FullSelectorArgument="&lt;webctrl id='CellPhone' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='CellPhone' tag='INPUT' type='text' class='form-control' aaname='Customer Cellphone' /&gt;" Guid="8c2413d6-b4da-4efe-b89d-469554454866" InformativeScreenshot="93c9466c3139ffc5e6b3813db56327b9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Edit - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                                         <uix:TargetAnchorable.Anchors>
-                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                             <uix:Target DesignTimeRectangle="320, 509, 144, 24" ElementType="Text" FriendlyName="'Customer Cellphone'" FullSelectorArgument="&lt;webctrl aaname='Customer Cellphone' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Customer Cellphone' tag='LABEL' type='' class='control-label' check:innerText='Customer Cellphone' /&gt;" SearchSteps="FuzzySelector" />
                                                           </scg:List>
                                                         </uix:TargetAnchorable.Anchors>
                                                       </uix:TargetAnchorable>
                                                     </uix:NTypeInto.Target>
                                                   </uix:NTypeInto>
-                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Save" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="93e24449-d829-4736-98fa-ae576aaa043e" Version="V3">
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Save" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="93e24449-d829-4736-98fa-ae576aaa043e" Version="V3">
                                                     <uix:NClick.Target>
                                                       <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Customers/Edit/123656956" DesignTimeRectangle="320, 571, 59, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Save' check:text='Save' /&gt;" Guid="95a06ecf-0833-473e-950e-ba86076acb04" InformativeScreenshot="2da1b9ba495c3eab16419461ae340ca1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Edit - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
                                                     </uix:NClick.Target>
                                                   </uix:NClick>
-                                                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_27">
-                                                    <Assign.To>
-                                                      <OutArgument x:TypeArguments="x:Int32">[DetailsRowCounter]</OutArgument>
-                                                    </Assign.To>
-                                                    <Assign.Value>
-                                                      <InArgument x:TypeArguments="x:Int32">[DetailsRowCounter+1]</InArgument>
-                                                    </Assign.Value>
-                                                  </Assign>
-                                                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_28">
-                                                    <Assign.To>
-                                                      <OutArgument x:TypeArguments="x:String">[DynamicDetailsRowSelectorID]</OutArgument>
-                                                    </Assign.To>
-                                                    <Assign.Value>
-                                                      <InArgument x:TypeArguments="x:String">[DetailsRowCounter.ToString]</InArgument>
-                                                    </Assign.Value>
-                                                  </Assign>
-                                                  <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_29">
-                                                    <Assign.To>
-                                                      <OutArgument x:TypeArguments="x:String">[DynamicDetailsRowSelector]</OutArgument>
-                                                    </Assign.To>
-                                                    <Assign.Value>
-                                                      <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;
-&lt;webctrl tag='TABLE' /&gt;
-&lt;webctrl aaname='Edit' tableRow='" + DynamicDetailsRowSelectorID + "' tag='A' /&gt;"]</InArgument>
-                                                    </Assign.Value>
-                                                  </Assign>
-                                                  <ui:Break sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="Break_2" />
                                                 </Sequence>
                                               </If.Then>
                                               <If.Else>
-                                                <Sequence sap:VirtualizedContainerService.HintSize="476,415" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                                <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_31">
-                                                    <Assign.To>
-                                                      <OutArgument x:TypeArguments="x:Int32">[DetailsRowCounter]</OutArgument>
-                                                    </Assign.To>
-                                                    <Assign.Value>
-                                                      <InArgument x:TypeArguments="x:Int32">[DetailsRowCounter+1]</InArgument>
-                                                    </Assign.Value>
-                                                  </Assign>
-                                                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_32">
-                                                    <Assign.To>
-                                                      <OutArgument x:TypeArguments="x:String">[DynamicDetailsRowSelectorID]</OutArgument>
-                                                    </Assign.To>
-                                                    <Assign.Value>
-                                                      <InArgument x:TypeArguments="x:String">[DetailsRowCounter.ToString]</InArgument>
-                                                    </Assign.Value>
-                                                  </Assign>
-                                                  <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_33">
-                                                    <Assign.To>
-                                                      <OutArgument x:TypeArguments="x:String">[DynamicDetailsRowSelector]</OutArgument>
-                                                    </Assign.To>
-                                                    <Assign.Value>
-                                                      <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;
-&lt;webctrl tag='TABLE' /&gt;
-&lt;webctrl aaname='Edit' tableRow='" + DynamicDetailsRowSelectorID + "' tag='A' /&gt;"]</InArgument>
-                                                    </Assign.Value>
-                                                  </Assign>
                                                 </Sequence>
                                               </If.Else>
                                             </If>
@@ -506,6 +454,32 @@
                                         </ActivityAction>
                                       </ui:ForEachRow.Body>
                                     </ui:ForEachRow>
+                                    <Assign sap:VirtualizedContainerService.HintSize="486,82" sap2010:WorkflowViewState.IdRef="Assign_58">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Int32">[DetailsRowCounter]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Int32">[DetailsRowCounter+1]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="486,82" sap2010:WorkflowViewState.IdRef="Assign_59">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[DynamicDetailsRowSelectorID]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[DetailsRowCounter.ToString]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="486,83" sap2010:WorkflowViewState.IdRef="Assign_60">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[DynamicDetailsRowSelector]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;
+&lt;webctrl tag='TABLE' /&gt;
+&lt;webctrl aaname='Edit' tableRow='" + DynamicDetailsRowSelectorID + "' tag='A' /&gt;"]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
                                   </Sequence>
                                 </ActivityAction>
                               </ui:ForEachRow.Body>
@@ -554,7 +528,7 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <If Condition="[CurrentTestRow.Item(&quot;CustomerTitle&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Title&quot;).ToString OR CurrentTestRow.Item(&quot;CustomerName&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Name&quot;).ToString OR CurrentTestRow.Item(&quot;CustomerSurname&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Surname&quot;).ToString OR CurrentTestRow.Item(&quot;CellPhone&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Cellphone&quot;).ToString OR CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="586,857" sap2010:WorkflowViewState.IdRef="If_3">
+                                            <If Condition="[CurrentTestRow.Item(&quot;CustomerTitle&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Title&quot;).ToString AND CurrentTestRow.Item(&quot;CustomerName&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Name&quot;).ToString AND CurrentTestRow.Item(&quot;CustomerSurname&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Surname&quot;).ToString AND CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="586,857" sap2010:WorkflowViewState.IdRef="If_3">
                                               <If.Then>
                                                 <Sequence sap:VirtualizedContainerService.HintSize="552,675" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -650,33 +624,33 @@
 &lt;webctrl aaname='Delete' tableRow='" + DynamicDetailsRowSelectorID + "' tag='A' /&gt;"]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Deletes each record that was created successfully." DataTable="[TestDataTableCustomers]" DisplayName="For Each Row in Test Data Table - Deleting Each Record" sap:VirtualizedContainerService.HintSize="738,2247" sap2010:WorkflowViewState.IdRef="ForEachRow_14">
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Deletes each record that was created and edited successfully." DataTable="[ExtractDataTableCustomers]" DisplayName="For Each Row in Extracted Data Table - Deleting Each Record" sap:VirtualizedContainerService.HintSize="738,1889" sap2010:WorkflowViewState.IdRef="ForEachRow_14">
                               <ui:ForEachRow.Body>
                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                   <ActivityAction.Argument>
-                                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentTestRow" />
+                                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentExtractedRow" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="628,2030" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="628,1672" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTableCustomers]" DisplayName="For Each Row in Extracted Data Table" sap:VirtualizedContainerService.HintSize="586,1942" sap2010:WorkflowViewState.IdRef="ForEachRow_15">
+                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[TestDataTableCustomers]" DisplayName="For Each Row in Test Data Table" sap:VirtualizedContainerService.HintSize="586,1217" sap2010:WorkflowViewState.IdRef="ForEachRow_15">
                                       <ui:ForEachRow.Body>
                                         <ActivityAction x:TypeArguments="sd:DataRow">
                                           <ActivityAction.Argument>
-                                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentExtractedRow" />
+                                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentTestRow" />
                                           </ActivityAction.Argument>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,1756" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,1031" sap2010:WorkflowViewState.IdRef="Sequence_34">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <If Condition="[CurrentTestRow.Item(&quot;CustomerTitle&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Title&quot;).ToString OR CurrentTestRow.Item(&quot;CustomerName&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Name&quot;).ToString OR CurrentTestRow.Item(&quot;CustomerSurname&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Surname&quot;).ToString OR CurrentTestRow.Item(&quot;CellPhone&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Cellphone&quot;).ToString OR CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="510,1668" sap2010:WorkflowViewState.IdRef="If_5">
+                                            <If Condition="[CurrentTestRow.Item(&quot;CustomerTitle&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Title&quot;).ToString AND CurrentTestRow.Item(&quot;CustomerName&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Name&quot;).ToString AND CurrentTestRow.Item(&quot;CustomerSurname&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Surname&quot;).ToString AND CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="510,943" sap2010:WorkflowViewState.IdRef="If_5">
                                               <If.Then>
-                                                <Sequence sap:VirtualizedContainerService.HintSize="476,1071" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                                <Sequence sap:VirtualizedContainerService.HintSize="476,761" sap2010:WorkflowViewState.IdRef="Sequence_32">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -697,68 +671,23 @@
                                                       <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Customers/Delete/123657259" DesignTimeRectangle="320, 463, 72, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Delete'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-danger' aaname='Delete' check:text='Delete' /&gt;" Guid="fc6626bf-1651-4d2c-88c8-269423e1db7e" InformativeScreenshot="74722ceba2de61718c50b349ae699897.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Delete - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
                                                     </uix:NClick.Target>
                                                   </uix:NClick>
-                                                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_48">
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_64">
                                                     <Assign.To>
                                                       <OutArgument x:TypeArguments="x:Int32">[DetailsRowCounter]</OutArgument>
                                                     </Assign.To>
                                                     <Assign.Value>
-                                                      <InArgument x:TypeArguments="x:Int32">[DetailsRowCounter]</InArgument>
+                                                      <InArgument x:TypeArguments="x:Int32">[DetailsRowCounter - 1]</InArgument>
                                                     </Assign.Value>
                                                   </Assign>
-                                                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_49">
-                                                    <Assign.To>
-                                                      <OutArgument x:TypeArguments="x:String">[DynamicDetailsRowSelectorID]</OutArgument>
-                                                    </Assign.To>
-                                                    <Assign.Value>
-                                                      <InArgument x:TypeArguments="x:String">[DetailsRowCounter.ToString]</InArgument>
-                                                    </Assign.Value>
-                                                  </Assign>
-                                                  <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_50">
-                                                    <Assign.To>
-                                                      <OutArgument x:TypeArguments="x:String">[DynamicDetailsRowSelector]</OutArgument>
-                                                    </Assign.To>
-                                                    <Assign.Value>
-                                                      <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;
-&lt;webctrl tag='TABLE' /&gt;
-&lt;webctrl aaname='Delete' tableRow='" + DynamicDetailsRowSelectorID + "' tag='A' /&gt;"]</InArgument>
-                                                    </Assign.Value>
-                                                  </Assign>
-                                                  <ui:Break sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="Break_5" />
                                                 </Sequence>
                                               </If.Then>
                                               <If.Else>
-                                                <Sequence sap:VirtualizedContainerService.HintSize="476,415" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                                <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_33">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_51">
-                                                    <Assign.To>
-                                                      <OutArgument x:TypeArguments="x:Int32">[DetailsRowCounter]</OutArgument>
-                                                    </Assign.To>
-                                                    <Assign.Value>
-                                                      <InArgument x:TypeArguments="x:Int32">[DetailsRowCounter+1]</InArgument>
-                                                    </Assign.Value>
-                                                  </Assign>
-                                                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_52">
-                                                    <Assign.To>
-                                                      <OutArgument x:TypeArguments="x:String">[DynamicDetailsRowSelectorID]</OutArgument>
-                                                    </Assign.To>
-                                                    <Assign.Value>
-                                                      <InArgument x:TypeArguments="x:String">[DetailsRowCounter.ToString]</InArgument>
-                                                    </Assign.Value>
-                                                  </Assign>
-                                                  <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_53">
-                                                    <Assign.To>
-                                                      <OutArgument x:TypeArguments="x:String">[DynamicDetailsRowSelector]</OutArgument>
-                                                    </Assign.To>
-                                                    <Assign.Value>
-                                                      <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;
-&lt;webctrl tag='TABLE' /&gt;
-&lt;webctrl aaname='Delete' tableRow='" + DynamicDetailsRowSelectorID + "' tag='A' /&gt;"]</InArgument>
-                                                    </Assign.Value>
-                                                  </Assign>
                                                 </Sequence>
                                               </If.Else>
                                             </If>
@@ -766,6 +695,32 @@
                                         </ActivityAction>
                                       </ui:ForEachRow.Body>
                                     </ui:ForEachRow>
+                                    <Assign sap:VirtualizedContainerService.HintSize="586,82" sap2010:WorkflowViewState.IdRef="Assign_61">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Int32">[DetailsRowCounter]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Int32">[DetailsRowCounter + 1]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="586,82" sap2010:WorkflowViewState.IdRef="Assign_62">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[DynamicDetailsRowSelectorID]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[DetailsRowCounter.ToString]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="586,83" sap2010:WorkflowViewState.IdRef="Assign_63">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[DynamicDetailsRowSelector]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;
+&lt;webctrl tag='TABLE' /&gt;
+&lt;webctrl aaname='Delete' tableRow='" + DynamicDetailsRowSelectorID + "' tag='A' /&gt;"]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
                                   </Sequence>
                                 </ActivityAction>
                               </ui:ForEachRow.Body>
@@ -796,25 +751,25 @@
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentTestRow" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="634,779" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="628,779" sap2010:WorkflowViewState.IdRef="Sequence_41">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTableCustomers]" DisplayName="For Each Row in Extracted Data Table" sap:VirtualizedContainerService.HintSize="592,691" sap2010:WorkflowViewState.IdRef="ForEachRow_17">
+                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTableCustomers]" DisplayName="For Each Row in Extracted Data Table" sap:VirtualizedContainerService.HintSize="586,691" sap2010:WorkflowViewState.IdRef="ForEachRow_17">
                                       <ui:ForEachRow.Body>
                                         <ActivityAction x:TypeArguments="sd:DataRow">
                                           <ActivityAction.Argument>
                                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentExtractedRow" />
                                           </ActivityAction.Argument>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="558,505" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,505" sap2010:WorkflowViewState.IdRef="Sequence_40">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <If Condition="[CurrentTestRow.Item(&quot;CustomerTitle&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Title&quot;).ToString OR CurrentTestRow.Item(&quot;CustomerName&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Name&quot;).ToString OR CurrentTestRow.Item(&quot;CustomerSurname&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Surname&quot;).ToString OR CurrentTestRow.Item(&quot;CellPhone&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Cellphone&quot;).ToString OR CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="516,417" sap2010:WorkflowViewState.IdRef="If_6">
+                                            <If Condition="[CurrentTestRow.Item(&quot;CustomerTitle&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Title&quot;).ToString AND CurrentTestRow.Item(&quot;CustomerName&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Name&quot;).ToString AND CurrentTestRow.Item(&quot;CustomerSurname&quot;).ToString = CurrentExtractedRow.Item(&quot;Customer Surname&quot;).ToString AND CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="510,417" sap2010:WorkflowViewState.IdRef="If_6">
                                               <If.Then>
                                                 <Sequence sap:VirtualizedContainerService.HintSize="476,235" sap2010:WorkflowViewState.IdRef="Sequence_38">
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -899,7 +854,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:ForEachRow>
-                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[TestDataTableCustomers]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="738,813" sap2010:WorkflowViewState.IdRef="ForEachRow_8">
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Writes the final test results back into the Test Data File." DataTable="[TestDataTableCustomers]" DisplayName="For Each Row in Data Table - Write to Test Data File" sap:VirtualizedContainerService.HintSize="738,844" sap2010:WorkflowViewState.IdRef="ForEachRow_8">
                               <ui:ForEachRow.Body>
                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                   <ActivityAction.Argument>
@@ -931,6 +886,11 @@
                                   </Sequence>
                                 </ActivityAction>
                               </ui:ForEachRow.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </ui:ForEachRow>
                           </Sequence>
                         </ActivityAction>
