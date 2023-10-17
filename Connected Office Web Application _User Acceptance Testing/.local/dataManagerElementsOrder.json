@@ -38,13 +38,29 @@
       "Path": "CustomerTest.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "DynamicRowSelector&Sequence_4",
+        "RowCounter&Sequence_4",
+        "DynamicRowSelectorID&Sequence_4",
         "CellphoneDummyData&Sequence_4",
-        "DynamicDetailsRowSelectorID&Sequence_4",
-        "DetailsRowCounter&Sequence_4",
-        "DynamicDetailsRowSelector&Sequence_4",
-        "ExtractedCustomerDetails&Sequence_4",
         "TestDataTableCustomers&Sequence_1",
         "ExtractDataTableCustomers&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TestDataFilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProductTest.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DescriptionDummyData&Sequence_2",
+        "DynamicRowSelector&Sequence_2",
+        "RowCounter&Sequence_2",
+        "DynamicRowSelectorID&Sequence_2",
+        "TestDataTableProducts&Sequence_1",
+        "ExtractDataTableProducts&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
         "in_TestDataFilePath"
