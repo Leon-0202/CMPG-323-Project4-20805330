@@ -67,6 +67,29 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "OrderTest.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "SeparatedDate&Sequence_38",
+        "DateToSeparate&Sequence_38",
+        "SeparatedDate&Sequence_37",
+        "DateToSeparate&Sequence_37",
+        "SeparatedDate&Sequence_36",
+        "DateToSeparate&Sequence_36",
+        "ExtractDataTableOrders&Sequence_1",
+        "TestDataTableOrders&Sequence_1",
+        "DynamicRowSelectorID&Sequence_2",
+        "RowCounter&Sequence_2",
+        "DynamicRowSelector&Sequence_2",
+        "AddressDummyData&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TestDataFilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
