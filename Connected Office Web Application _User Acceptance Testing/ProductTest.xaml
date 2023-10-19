@@ -286,7 +286,7 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <If Condition="[CurrentTestRow.Item(&quot;ProductName&quot;).ToString = CurrentExtractedRow.Item(&quot;Product Name&quot;).ToString AND CurrentTestRow.Item(&quot;ProductDescription&quot;).ToString = CurrentExtractedRow.Item(&quot;Product Description&quot;).ToString AND CurrentTestRow.Item(&quot;UnitsInStock&quot;).ToString = CurrentExtractedRow.Item(&quot;Units in Stock&quot;).ToString]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="510,587" sap2010:WorkflowViewState.IdRef="If_1">
+                                            <If Condition="[CurrentTestRow.Item(&quot;ProductName&quot;).ToString.Trim = CurrentExtractedRow.Item(&quot;Product Name&quot;).ToString AND CurrentTestRow.Item(&quot;ProductDescription&quot;).ToString.Trim = CurrentExtractedRow.Item(&quot;Product Description&quot;).ToString AND CurrentTestRow.Item(&quot;UnitsInStock&quot;).ToString.Trim = CurrentExtractedRow.Item(&quot;Units in Stock&quot;).ToString]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="510,587" sap2010:WorkflowViewState.IdRef="If_1">
                                               <If.Then>
                                                 <Sequence sap:VirtualizedContainerService.HintSize="476,235" sap2010:WorkflowViewState.IdRef="Sequence_4">
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -376,25 +376,25 @@
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentExtractedRow" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="634,2769" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,2769" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[TestDataTableProducts]" DisplayName="For Each Row in Test Data Table" sap:VirtualizedContainerService.HintSize="592,1156" sap2010:WorkflowViewState.IdRef="ForEachRow_10">
+                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[TestDataTableProducts]" DisplayName="For Each Row in Test Data Table" sap:VirtualizedContainerService.HintSize="510,1156" sap2010:WorkflowViewState.IdRef="ForEachRow_10">
                                       <ui:ForEachRow.Body>
                                         <ActivityAction x:TypeArguments="sd:DataRow">
                                           <ActivityAction.Argument>
                                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentTestRow" />
                                           </ActivityAction.Argument>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="558,970" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,970" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <If Condition="[CurrentTestRow.Item(&quot;ProductName&quot;).ToString = CurrentExtractedRow.Item(&quot;Product Name&quot;).ToString AND CurrentTestRow.Item(&quot;ProductDescription&quot;).ToString = CurrentExtractedRow.Item(&quot;Product Description&quot;).ToString AND CurrentTestRow.Item(&quot;UnitsInStock&quot;).ToString = CurrentExtractedRow.Item(&quot;Units in Stock&quot;).ToString AND CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="516,882" sap2010:WorkflowViewState.IdRef="If_5">
+                                            <If Condition="[CurrentTestRow.Item(&quot;ProductName&quot;).ToString.Trim = CurrentExtractedRow.Item(&quot;Product Name&quot;).ToString AND CurrentTestRow.Item(&quot;ProductDescription&quot;).ToString.Trim = CurrentExtractedRow.Item(&quot;Product Description&quot;).ToString AND CurrentTestRow.Item(&quot;UnitsInStock&quot;).ToString.Trim = CurrentExtractedRow.Item(&quot;Units in Stock&quot;).ToString AND CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="410,882" sap2010:WorkflowViewState.IdRef="If_5">
                                               <If.Then>
                                                 <Sequence sap:VirtualizedContainerService.HintSize="376,700" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -411,7 +411,7 @@
                                                     <uix:NTypeInto.Target>
                                                       <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Products/Edit/10008664" DesignTimeRectangle="320, 364, 416, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'xxxxxxxxxxxx'" FullSelectorArgument="&lt;webctrl id='ProductDescription' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ProductDescription' tag='INPUT' type='text' class='form-control' aaname='Product Description' /&gt;" Guid="ad0b4c3a-5aa3-4b01-8064-e1ef3babbc30" InformativeScreenshot="af5ed663aa18b5edc5323e2fd6baf782.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Edit - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                                         <uix:TargetAnchorable.Anchors>
-                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                             <uix:Target DesignTimeRectangle="320, 340, 140, 24" ElementType="Text" FriendlyName="'Product Description'" FullSelectorArgument="&lt;webctrl aaname='Product Description' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Product Description' tag='LABEL' type='' class='control-label' check:innerText='Product Description' /&gt;" SearchSteps="FuzzySelector" />
                                                           </scg:List>
                                                         </uix:TargetAnchorable.Anchors>
@@ -439,7 +439,7 @@
                                         </ActivityAction>
                                       </ui:ForEachRow.Body>
                                     </ui:ForEachRow>
-                                    <Assign sap:VirtualizedContainerService.HintSize="592,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                    <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_6">
                                       <Assign.To>
                                         <OutArgument x:TypeArguments="x:Int32">[RowCounter]</OutArgument>
                                       </Assign.To>
@@ -447,7 +447,7 @@
                                         <InArgument x:TypeArguments="x:Int32">[RowCounter+1]</InArgument>
                                       </Assign.Value>
                                     </Assign>
-                                    <Assign sap:VirtualizedContainerService.HintSize="592,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                    <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_7">
                                       <Assign.To>
                                         <OutArgument x:TypeArguments="x:String">[DynamicRowSelectorID]</OutArgument>
                                       </Assign.To>
@@ -455,7 +455,7 @@
                                         <InArgument x:TypeArguments="x:String">[RowCounter.ToString]</InArgument>
                                       </Assign.Value>
                                     </Assign>
-                                    <Assign sap:VirtualizedContainerService.HintSize="592,83" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                    <Assign sap:VirtualizedContainerService.HintSize="510,83" sap2010:WorkflowViewState.IdRef="Assign_8">
                                       <Assign.To>
                                         <OutArgument x:TypeArguments="x:String">[DynamicRowSelector]</OutArgument>
                                       </Assign.To>
@@ -465,7 +465,7 @@
 &lt;webctrl aaname='Edit' tableRow='" + DynamicRowSelectorID + "' tag='A' /&gt;"]</InArgument>
                                       </Assign.Value>
                                     </Assign>
-                                    <If Condition="[RowCounter MOD 4 = 0]" sap:VirtualizedContainerService.HintSize="592,352" sap2010:WorkflowViewState.IdRef="If_11">
+                                    <If Condition="[RowCounter MOD 4 = 0]" sap:VirtualizedContainerService.HintSize="510,352" sap2010:WorkflowViewState.IdRef="If_11">
                                       <If.Then>
                                         <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_38">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -487,7 +487,7 @@
                                         <Sequence sap2010:WorkflowViewState.IdRef="Sequence_39" />
                                       </If.Else>
                                     </If>
-                                    <If Condition="[ScrollValue &lt; 1]" sap:VirtualizedContainerService.HintSize="592,352" sap2010:WorkflowViewState.IdRef="If_12">
+                                    <If Condition="[ScrollValue &lt; 1]" sap:VirtualizedContainerService.HintSize="510,352" sap2010:WorkflowViewState.IdRef="If_12">
                                       <If.Then>
                                         <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_40">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -509,12 +509,12 @@
                                         <Sequence sap2010:WorkflowViewState.IdRef="Sequence_41" />
                                       </If.Else>
                                     </If>
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Products'" sap:VirtualizedContainerService.HintSize="592,157" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="93e24449-d829-4736-98fa-ae576aaa043e" Version="V3">
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Products'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="93e24449-d829-4736-98fa-ae576aaa043e" Version="V3">
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Products" DesignTimeRectangle="543, 142, 82, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Products'" FullSelectorArgument="&lt;webctrl aaname='Products' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Products' tag='A' type='' class='nav-link text-dark' check:innerText='Products' /&gt;" Guid="5d8e395d-1f24-44e2-86a7-076f57358870" InformativeScreenshot="e67ffd312a067e4f20d89994c36ff6a6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
                                       </uix:NClick.Target>
                                     </uix:NClick>
-                                    <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="592,137" sap2010:WorkflowViewState.IdRef="NMouseScroll_4" InteractionMode="HardwareEvents" MovementUnits="[ScrollValue]" Version="V3" />
+                                    <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="510,137" sap2010:WorkflowViewState.IdRef="NMouseScroll_4" InteractionMode="HardwareEvents" MovementUnits="[ScrollValue]" Version="V3" />
                                   </Sequence>
                                 </ActivityAction>
                               </ui:ForEachRow.Body>
@@ -563,7 +563,7 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <If Condition="[CurrentTestRow.Item(&quot;ProductName&quot;).ToString = CurrentExtractedRow.Item(&quot;Product Name&quot;).ToString AND CurrentTestRow.Item(&quot;UnitsInStock&quot;).ToString = CurrentExtractedRow.Item(&quot;Units in Stock&quot;).ToString AND CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="586,857" sap2010:WorkflowViewState.IdRef="If_7">
+                                            <If Condition="[CurrentTestRow.Item(&quot;ProductName&quot;).ToString.Trim = CurrentExtractedRow.Item(&quot;Product Name&quot;).ToString AND CurrentTestRow.Item(&quot;UnitsInStock&quot;).ToString.Trim = CurrentExtractedRow.Item(&quot;Units in Stock&quot;).ToString AND CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="586,857" sap2010:WorkflowViewState.IdRef="If_7">
                                               <If.Then>
                                                 <Sequence sap:VirtualizedContainerService.HintSize="552,675" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -691,7 +691,7 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <If Condition="[CurrentTestRow.Item(&quot;ProductName&quot;).ToString = CurrentExtractedRow.Item(&quot;Product Name&quot;).ToString AND CurrentTestRow.Item(&quot;UnitsInStock&quot;).ToString = CurrentExtractedRow.Item(&quot;Units in Stock&quot;).ToString AND CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="510,868" sap2010:WorkflowViewState.IdRef="If_2">
+                                            <If Condition="[CurrentTestRow.Item(&quot;ProductName&quot;).ToString.Trim = CurrentExtractedRow.Item(&quot;Product Name&quot;).ToString AND CurrentTestRow.Item(&quot;UnitsInStock&quot;).ToString.Trim = CurrentExtractedRow.Item(&quot;Units in Stock&quot;).ToString AND CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="510,868" sap2010:WorkflowViewState.IdRef="If_2">
                                               <If.Then>
                                                 <Sequence sap:VirtualizedContainerService.HintSize="476,686" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -865,7 +865,7 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <If sap2010:Annotation.AnnotationText="In other words, if the record still exists instead of being deleted." Condition="[CurrentTestRow.Item(&quot;ProductName&quot;).ToString = CurrentExtractedRow.Item(&quot;Product Name&quot;).ToString AND CurrentTestRow.Item(&quot;UnitsInStock&quot;).ToString = CurrentExtractedRow.Item(&quot;Units in Stock&quot;).ToString AND CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="510,448" sap2010:WorkflowViewState.IdRef="If_4">
+                                            <If sap2010:Annotation.AnnotationText="In other words, if the record still exists instead of being deleted." Condition="[CurrentTestRow.Item(&quot;ProductName&quot;).ToString.Trim = CurrentExtractedRow.Item(&quot;Product Name&quot;).ToString AND CurrentTestRow.Item(&quot;UnitsInStock&quot;).ToString.Trim = CurrentExtractedRow.Item(&quot;Units in Stock&quot;).ToString AND CurrentTestRow.Item(&quot;Test Result&quot;).ToString = &quot;prelimPass&quot;]" DisplayName="If the record in the Test Data Table matches the record in the Extracted Data Table" sap:VirtualizedContainerService.HintSize="510,448" sap2010:WorkflowViewState.IdRef="If_4">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>

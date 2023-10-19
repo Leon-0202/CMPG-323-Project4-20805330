@@ -12,6 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "TestOrderDetails&Sequence_1",
         "TestOrders&Sequence_1",
         "TestProducts&Sequence_1",
         "TestCustomers&Sequence_1",
@@ -38,6 +39,7 @@
       "Path": "CustomerTest.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "ScrollValue&Sequence_4",
         "DynamicRowSelector&Sequence_4",
         "RowCounter&Sequence_4",
         "DynamicRowSelectorID&Sequence_4",
@@ -55,6 +57,7 @@
       "Path": "ProductTest.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "ScrollValue&Sequence_2",
         "DescriptionDummyData&Sequence_2",
         "DynamicRowSelector&Sequence_2",
         "RowCounter&Sequence_2",
@@ -72,10 +75,11 @@
       "Path": "OrderTest.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "SeparatedDate&Sequence_38",
-        "DateToSeparate&Sequence_38",
-        "SeparatedDate&Sequence_37",
-        "DateToSeparate&Sequence_37",
+        "ScrollValue&Sequence_2",
+        "SeparatedDate&Sequence_51",
+        "DateToSeparate&Sequence_51",
+        "SeparatedDate&Sequence_52",
+        "DateToSeparate&Sequence_52",
         "SeparatedDate&Sequence_36",
         "DateToSeparate&Sequence_36",
         "ExtractDataTableOrders&Sequence_1",
@@ -84,6 +88,30 @@
         "RowCounter&Sequence_2",
         "DynamicRowSelector&Sequence_2",
         "AddressDummyData&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TestDataFilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "OrderDetailTest.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTableOrderDetails&Sequence_1",
+        "TestDataTableOrderDetails&Sequence_1",
+        "DynamicRowSelectorID&Sequence_2",
+        "RowCounter&Sequence_2",
+        "DynamicRowSelector&Sequence_2",
+        "QuantityDummyData&Sequence_2",
+        "ScrollValue&Sequence_2",
+        "SeparatedDate&Sequence_3",
+        "DateToSeparate&Sequence_3",
+        "SeparatedDate&Sequence_49",
+        "DateToSeparate&Sequence_49",
+        "SeparatedDate&Sequence_54",
+        "DateToSeparate&Sequence_54"
       ],
       "ArgumentsSectionElementsOrder": [
         "in_TestDataFilePath"
